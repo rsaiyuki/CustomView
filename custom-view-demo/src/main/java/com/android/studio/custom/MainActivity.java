@@ -17,10 +17,13 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         CustomTableLayout mt = (CustomTableLayout) findViewById(R.id.mt);
-        ((EditText) mt.getTableRowsView(0,1)).setText("test");
+        ((EditText) mt.getTableRowsChild(0,1)).setText("test");
         mt.addTableRowsView(1, LayoutInflater.from(this).inflate(R.layout.test_item, null));
+        mt.setTableRowCount(2);
+        ((EditText)mt.getTableRow(1).findViewById(R.id.edt)).setText("我是通过findview得到的");
         mt.setRowBackgroundColorScheme(android.R.color.holo_red_light, android.R.color.holo_green_light,
                 android.R.color.holo_blue_bright, android.R.color.holo_orange_light);
+
     }
 
 
