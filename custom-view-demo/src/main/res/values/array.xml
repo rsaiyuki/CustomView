@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="row_data">
+        <item>我是1222222</item>
+        <item>我是2</item>
+        <item>我是3</item>
+        <item>我是4</item>
+        <item>我是5</item>
+    </array>
+</resources>

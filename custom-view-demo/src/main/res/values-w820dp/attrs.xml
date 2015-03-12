@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="custom_tablelayout">
+        <attr name="row_layout" format="reference"/>
+        <attr name="row_count" format="integer"/>
+        <attr name="row_text_data" format="reference"/>
+    </declare-styleable>
+</resources>
