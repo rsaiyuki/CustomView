@@ -2,6 +2,7 @@ package com.android.studio.custom.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.support.annotation.ArrayRes;
 import android.support.annotation.ColorRes;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
@@ -101,6 +102,10 @@ public class CustomTableLayout extends ScrollView {
             tl.addView(view, tl.getChildCount());
             invalidate();
         }
+    }
+    public void setTableRowData(@ArrayRes int dataId) {
+        this.dataId = dataId;
+        initTableLayout();
     }
     public void setRowBackgroundColorScheme(@ColorRes int... colorId){
         int len = colorId.length;
